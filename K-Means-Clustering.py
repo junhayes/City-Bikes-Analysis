@@ -5,11 +5,11 @@ import psycopg2
 import time
 
 connection = psycopg2.connect(
-    host='dublinbikes.chpkrcuhpnzi.eu-west-1.rds.amazonaws.com',
+    host='[host_name].rds.amazonaws.com',
     port=5432,
-    user='dublinbikes',
-    password='dublinbikes',
-    database='dbDublinBikes'
+    user='username',
+    password='password',
+    database='database'
 )
 cur = connection.cursor()
 timestamp = time.strftime('%d-%m-%Y_%H%M',time.localtime())
