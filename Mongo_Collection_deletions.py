@@ -7,7 +7,7 @@ def Delete_from_ID(cutoff, collection_name):
 
 def main():
     #Connection details for MongoDB Atlas connection
-    DublinBikes = MongoClient('mongodb+srv://jhayes:DublinBikes@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
+    DublinBikes = MongoClient('mongodb+srv://[username]:[database]@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
     db = DublinBikes['Bikes']
     collection_Goteborg = db['GoteborgBikes']
     collection_Brussels = db['BrusselsBikes']
