@@ -14,8 +14,8 @@ from pymongo import MongoClient
 city1='dublin'
 city2='bruxelles'
 city3='goteborg'
-dbikes_apikey='63563e548cffe8bf37f4246538a2c2ee490b8637'
-DublinBikes = MongoClient('mongodb+srv://jhayes:DublinBikes@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
+dbikes_apikey='API_KEY'
+DublinBikes = MongoClient('mongodb+srv://[username]:[database]@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
 db = DublinBikes['Bikes']
 collection_dubbikeData = db['DubBikes']
 collection_brubikeData = db['BrusselsBikes']
