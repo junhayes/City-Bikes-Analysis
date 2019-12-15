@@ -111,7 +111,7 @@ def Transfer_To_Postgres(connection,cursor,path,table):
 
 def main():
     #Connection details for MongoDB Atlas connection
-    DublinBikes = MongoClient('mongodb+srv://jhayes:DublinBikes@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
+    DublinBikes = MongoClient('mongodb+srv://[username]:[database]@cluster0-dkeas.mongodb.net/test?retryWrites=true&w=majority')
     db = DublinBikes['Bikes']
     collection_Goteborg = db['GoteborgBikes']
     collection_Brussels = db['BrusselsBikes']
@@ -120,12 +120,12 @@ def main():
    
     #Connection details for Postgres cloud
     connection = psycopg2.connect(
-    host = 'dublinbikes.chpkrcuhpnzi.eu-west-1.rds.amazonaws.com',
-    port = 5432,
-    user = 'dublinbikes',
-    password = 'dublinbikes',
-    database='dbDublinBikes'
-    )
+    host='[host_name].rds.amazonaws.com',
+    port=5432,
+    user='username',
+    password='password',
+    database='database'
+)
     cursor=connection.cursor()     #postgres connection string
    
     sleeptime=300
