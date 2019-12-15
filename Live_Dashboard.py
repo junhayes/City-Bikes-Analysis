@@ -8,11 +8,11 @@ import psycopg2
 
 #connection to SQL
 connection = psycopg2.connect(
-    host='dublinbikes.chpkrcuhpnzi.eu-west-1.rds.amazonaws.com',
+    host='[host_name].eu-west-1.rds.amazonaws.com',
     port=5432,
-    user='dublinbikes',
-    password='dublinbikes',
-    database='dbDublinBikes'
+    user='username',
+    password='password',
+    database='database'
 )
 sleeptime = 300
 
